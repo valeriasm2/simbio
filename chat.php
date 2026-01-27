@@ -56,10 +56,10 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat - <?php echo htmlspecialchars($otherUser['name'] . ' ' . $otherUser['surnames']); ?></title>
-    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="css/chat.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
+    <link rel="stylesheet" href="css/chat.css?v=<?php echo filemtime('css/chat.css'); ?>">
 </head>
-<body>
+<body class="chat-page">
     <div class="chat-container">
         <!-- Header del chat -->
         <div class="chat-header">
