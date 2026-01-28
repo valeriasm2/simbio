@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main>
         <header class="profile-header">
             <nav class="profile-nav">
-                <a href="chat.php" class="nav-link">Converses</a>
+                <a href="messages.php" class="nav-link">Converses</a>
                 <a href="discover.php" class="nav-link">Descobrir</a>
             </nav>
             <h1>Perfil <?php echo htmlspecialchars($profile['name']); ?></h1>
