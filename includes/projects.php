@@ -1,4 +1,5 @@
 <?php
+require_once 'db.php';
 require_once 'auth.php';
 require_once 'logger.php';
 header('Content-Type: application/json; charset=utf-8');
@@ -34,6 +35,7 @@ try {
         ON ut.tag_id = pt.tag_id 
         AND ut.user_id = ?
     WHERE p.user_id != ?
+    AND p.deleted = 0
     GROUP BY p.project_id
     ORDER BY tags_en_comun DESC, p.project_id DESC
     ";
@@ -79,6 +81,7 @@ try {
             'type' => $project['type'],
             'tags' => $projectTags,
             'match' => $tagsEnComun > 0, // TRUE solo si comparten tags
+            'tags_en_comun' => $tagsEnComun,
             'liked' => $isLiked,
             'user_id' => $project['user_id'] // Añadido para enlaces de chat
         ];

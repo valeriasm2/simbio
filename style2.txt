@@ -216,63 +216,6 @@ body.login-page .back-btn:hover {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* ========== CONFIRMATION PAGE ========== */
-body.confirmation-page {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #A3D2CA 0%, #B5EAEA 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.confirmation-box {
-    background-color: #ffffff;
-    padding: 3rem 2.5rem;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(163, 210, 202, 0.3);
-    text-align: center;
-}
-
-.confirmation-box h1 {
-    color: var(--texto-oscuro);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.confirmation-box p {
-    color: var(--texto-medio);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.confirmation-box button {
-    background: linear-gradient(135deg, #7B68EE, #6A5ADB);
-    border: none;
-    padding: 0;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(123, 104, 238, 0.25);
-}
-
-.confirmation-box button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(123, 104, 238, 0.35);
-}
-
-.confirmation-box button a {
-    display: block;
-    padding: 0.9rem 2.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-}
-
 /* ========== LOGIN ADMIN ========== */
 body.login-page-admin {
     min-height: 100vh;
@@ -367,188 +310,8 @@ body.login-page-admin .button-group {
     margin-top: 1rem;
 }
 
-/* Botones estilo login */
-body.login-page-admin .button-link {
-    display: block;
-    text-align: center;
-    padding: 0.9rem;
-    background: linear-gradient(135deg, #FFD966 40%, #FFB200 100%);
-    color: #212A3E;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    box-shadow: 0 6px 28px 0 rgba(255, 188, 51, 0.15), 0 1.5px 4px rgba(33, 42, 62, 0.09);
-    transition: all 0.3s ease;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-body.login-page-admin .button-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 28px 0 rgba(255, 178, 0, 0.18), 0 2px 8px rgba(33, 42, 62, 0.12);
-    background: linear-gradient(135deg, #FFDF77 40%, #FFD966 100%);
-    color: #1a2233;
-}
-
-/* -------- DASHBOARD ADMIN PROJECTS -------- */
-body.login-page-admin header {
-    position: fixed;
-    /* fijo arriba */
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #212A3E 0%, #394867 100%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-}
-
-body.login-page-admin header .header-left,
-body.login-page-admin header .header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-body.login-page-admin header .nav-link {
-    text-decoration: none;
-    font-weight: 600;
-    color: #FFD966;
-    padding: 6px 10px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-body.login-page-admin header .nav-link:hover {
-    background-color: rgba(255, 217, 102, 0.2);
-    text-decoration: none;
-}
-
-body.login-page-admin header .btn-logout {
-    text-decoration: none;
-    font-weight: 600;
-    background-color: #FF6B6B;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-body.login-page-admin header .btn-logout:hover {
-    background-color: #FF3B3B;
-}
-
-body.login-page-admin main {
-    max-width: 1000px;
-    padding: 2rem;
-    margin-top: 80px;
-}
-
-body.login-page-admin #user-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-body.login-page-admin .project-card {
-    background-color: #F5F7FA;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(57, 72, 103, 0.18), 0 2px 8px rgba(33, 42, 62, 0.08);
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-body.login-page-admin .project-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #212A3E;
-    font-weight: 700;
-}
-
-body.login-page-admin .project-image {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-body.login-page-admin .project-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: auto;
-    gap: 5px;
-}
-
-body.login-page-admin .project-buttons .btn {
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    color: #212A3E;
-    transition: all 0.3s ease;
-    flex: 1;
-    text-align: center;
-}
-
-body.login-page-admin .btn-preview {
-    background: linear-gradient(135deg, #FFD966 40%, #FFB200 100%);
-    box-shadow: 0 4px 15px rgba(255, 217, 102, 0.4);
-}
-
-body.login-page-admin .btn-preview:hover {
-    box-shadow: 0 6px 20px rgba(255, 178, 0, 0.6);
-}
-
-body.login-page-admin .btn-delete {
-    background: linear-gradient(135deg, #FF6B6B 40%, #FF3B3B 100%);
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
-}
-
-body.login-page-admin .btn-delete:hover {
-    box-shadow: 0 6px 20px rgba(255, 59, 59, 0.6);
-}
-
-body.login-page-admin .btn-restore {
-    background: linear-gradient(135deg, #6BCB77 40%, #4CAF50 100%);
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(107, 203, 119, 0.4);
-}
-
-body.login-page-admin .btn-restore:hover {
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
-}
-
-body.login-page-admin video {
-    width: 100%;
-    border-radius: 8px;
-    display: none;
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-
-
 
 /* =========== ESTILOS DISCOVER ============ */
-
-/* Ocultar "Descobrir" en la navegación de discover.php */
-.discover-page header .nav-links li:nth-child(1) a {
-    display: none;
-}
 
 .discover-page {
     background: linear-gradient(135deg, #A3D2CA 0%, #B5EAEA 100%);
@@ -556,31 +319,30 @@ body.login-page-admin video {
     padding: 0;
     overflow: hidden;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
-.discover-page header {
+.discover-page .sidebar {
     position: fixed;
-    /* fijo arriba */
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
+    background: linear-gradient(180deg, rgba(163, 210, 202, 0.95) 0%, rgba(163, 210, 202, 0) 100%);
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 30px;
-    background: linear-gradient(135deg, #A3D2CA 0%, #B5EAEA 100%);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
+    width: 100%;
 }
 
-.discover-page header .nav-links {
+.discover-page .sidebar .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-.discover-page header .nav-links a {
+.discover-page .sidebar .nav-links li a {
     color: var(--texto-oscuro);
     text-decoration: none;
     font-weight: 600;
@@ -590,22 +352,22 @@ body.login-page-admin video {
     border-radius: 8px;
 }
 
-.discover-page header .nav-links a:hover {
+.discover-page .sidebar .nav-links li a:hover {
     color: #7B68EE;
     background: rgba(255, 255, 255, 0.5);
     text-decoration: underline;
 }
 
-.discover-page header .session-info {
+.discover-page .sidebar .session-info {
     display: flex;
     align-items: center;
     gap: 15px;
+    color: var(--texto-oscuro);
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--texto-oscuro);
 }
 
-.discover-page header .session-info a {
+.discover-page .sidebar .session-info a {
     color: var(--texto-oscuro);
     text-decoration: none;
     font-weight: 600;
@@ -616,7 +378,7 @@ body.login-page-admin video {
     border: 2px solid transparent;
 }
 
-.discover-page header .session-info a:hover {
+.discover-page .sidebar .session-info a:hover {
     background: linear-gradient(135deg, #7B68EE 0%, #6A5ADB 100%);
     color: #fff;
     border-color: #7B68EE;
@@ -626,10 +388,9 @@ body.login-page-admin video {
 
 .discover-page main {
     height: 100vh;
-    width: 100%;
-    margin-top: 0;
+    width: 100vw;
+    margin: 0;
     padding: 0;
-    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -787,10 +548,7 @@ body.login-page-admin video {
     font-weight: 600;
     color: #5a5a85;
     font-size: 0.98rem;
-    transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     padding: 9px 20px;
     text-decoration: none;
     border-radius: 7px;
@@ -799,6 +557,15 @@ body.login-page-admin video {
     display: flex;
     align-items: center;
     gap: 0.45em;
+}
+
+.discover-page .project-card .bottom-bar a,
+.discover-page .project-card .bottom-bar button {
+    transition:
+        background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .discover-page .project-card .bottom-bar a:hover,
@@ -1530,99 +1297,70 @@ body.login-page-admin video {
 
 
 /* -------- PROJECTS -------- */
-.profile-page #user-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrar las tarjetas */
-    gap: 20px; /* Espacio entre tarjetas */
-    margin-top: 20px;
-}
-
-.profile-page .project-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 15px;
-    width: 250px; /* ancho de cada tarjeta */
-    text-align: center; /* centrar contenido */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-page .project-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.profile-page .project-image {
-    width: 100%;
-    height: auto;
-    max-height: 180px; /* limitar altura */
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.profile-page .project-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: auto;
-}
-
-.profile-page .project-buttons .btn {
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
-}
-
-.profile-page .btn-preview {
-    background: linear-gradient(135deg, #b7a7ff, #baa7ff);
-    box-shadow: 0 4px 15px rgba(205, 167, 255, 0.4);
-}
-.profile-page .btn-preview:hover {
-    box-shadow: 0 6px 20px rgba(205, 167, 255, 0.6);
-}
-
-.profile-page .btn-edit {
-    background: linear-gradient(135deg, #FFAAA7, #FF9593);
-    box-shadow: 0 4px 15px rgba(255, 170, 167, 0.4);
-}
-.profile-page .btn-edit:hover {
-    box-shadow: 0 6px 20px rgba(255, 170, 167, 0.6);
+.profile-page .user-projects {
+    margin: 20px;
 }
 
 .profile-page .user-projects h2 {
-    text-align: center;
+    font-size: 1.5rem;
     color: var(--texto-oscuro);
     margin-bottom: 15px;
-    font-family: 'Fjalla One', sans-serif;
+    text-align: start;
 }
 
 .profile-page .user-projects a.btn.btn-primary {
-    display: block;              /* 🔑 clave */
-    width: fit-content;          /* para que no ocupe todo el ancho */
-    margin: 0 auto 15px auto;    /* centrado horizontal */
-    
     text-decoration: none;
-    color: #333;
-    background-color: #E8E8E8;
+    color: white;
+    background: linear-gradient(135deg, #7B68EE, #6A5ADB);
     padding: 10px 16px;
     border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 15px;
     transition: all 0.3s;
-    text-align: center;
     font-weight: 600;
+    box-shadow: 0 4px 15px rgba(123, 104, 238, 0.4);
 }
+
 .profile-page .user-projects a.btn.btn-primary:hover {
-    background: linear-gradient(135deg, #b7a7ff, #baa7ff);
-    color: #FFF;
-    box-shadow: 0 4px 15px rgba(205, 167, 255, 0.6);
+    background: linear-gradient(135deg, #6A5ADB, #5A4AC8);
+    box-shadow: 0 6px 20px rgba(123, 104, 238, 0.6);
+    transform: translateY(-2px);
 }
 
+.profile-page .user-projects .project {
+    margin-bottom: 25px;
+    text-align: start;
+}
 
+.profile-page .user-projects .project-title-link {
+    font-size: 1.2rem;
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.profile-page .user-projects .project-title-link:hover {
+    color: #7B68EE;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.profile-page .user-projects .project-preview {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.profile-page .user-projects .project-preview:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
 
 
 /* -------- NAV -------- */
@@ -2543,6 +2281,7 @@ body.page-chat {
 
 .chat-container {
     background: var(--fondo-blanco);
+    padding: 50px 32px 24px 32px;
     /* Aumentado: más espacioso */
     width: 100%;
     max-width: 660px;
@@ -3379,35 +3118,26 @@ main.conversations-page {
         overflow: auto;
     }
 
-    .discover-page header {
-        padding: 0.6em 1em;
-        gap: 0.6em;
-        flex-direction: row;
-        font-size: 0.8rem;
+    .discover-page .sidebar {
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+        background: linear-gradient(180deg, rgba(163, 210, 202, 0.98) 0%, rgba(163, 210, 202, 0.85) 100%);
         height: auto;
+        width: 100%;
+        border-radius: 0;
     }
 
-    .discover-page header .nav-links {
-        gap: 0.6em;
-        justify-content: center;
-        flex-wrap: wrap;
+    .discover-page .sidebar .nav-links {
+        gap: 0.7rem;
     }
 
-    .discover-page header .nav-links a {
-        font-size: 0.8rem;
-        padding: 0.6em 0.9em;
+    .discover-page .sidebar .nav-links li a {
+        font-size: 1rem;
     }
 
-    .discover-page header .session-info {
-        justify-content: center;
-        gap: 0.6em;
-        flex-wrap: wrap;
-        font-size: 0.8rem;
-    }
-
-    .discover-page header .session-info a {
-        font-size: 0.8rem;
-        padding: 0.6em 0.9em;
+    .discover-page .sidebar .session-info {
+        font-size: 0.95rem;
+        gap: 0.6rem;
     }
 
     .discover-page main {
@@ -3420,125 +3150,95 @@ main.conversations-page {
         padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: stretch;
         background: #fff;
     }
 
     .discover-page .project-card {
-        position: relative;
+        position: static;
         top: unset;
         left: unset;
         width: 100vw;
-        height: calc(100svh - 56px);
+        min-height: calc(100svh - 56px);
         max-width: 100vw;
         max-height: 100svh;
         border-radius: 0;
         box-shadow: none;
         margin: 0;
         padding: 0;
-        background: #000;
+        background: #fff;
     }
 
     .discover-page .project-card header {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        z-index: 10;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.95));
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-        border: 2px solid rgba(163, 210, 202, 0.3);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem 1rem 0.8rem 1rem;
+        border-radius: 0 0 12px 12px;
+        background: #f9fafb;
+        z-index: 3;
     }
 
     .discover-page .project-card header h2 {
-        color: var(--texto-oscuro);
-        font-size: 1.2rem;
-        font-weight: 400;
-        margin-bottom: 6px;
+        font-size: 1.15rem;
+        margin-bottom: 0.3rem;
     }
 
     .discover-page .project-card header p {
-        color: var(--texto-medio);
-        font-size: 0.9rem;
-        font-weight: 500;
-    }
-
-    .discover-page .project-card .video-section {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: #000;
+        font-size: 0.93rem;
     }
 
     .discover-page .project-card .actions {
-        position: absolute;
+        position: sticky;
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 10;
-        background: transparent;
-        padding: 15px 12px 12px 12px;
+        width: 100vw;
+        padding: 0.95rem 1rem 0.6rem 1rem;
+        background: #fff;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .discover-page .project-card .liked-indicator {
-        color: var(--texto-oscuro);
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 600;
+        gap: 0.7rem;
+        z-index: 3;
+        box-shadow: 0 -1px 8px rgba(163,210,202,0.12);
     }
 
     .discover-page .project-card .buttons {
-        gap: 25px;
-        margin-bottom: 8px;
+        gap: 1rem;
+        margin-bottom: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .discover-page .project-card .buttons button {
-        width: 70px;
-        height: 70px;
-        font-size: 0.8rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
         border-radius: 50%;
         padding: 0;
-        flex-shrink: 0;
     }
 
     .discover-page .project-card .bottom-bar {
+        padding: 0.6rem 0.7rem;
+        border-top: 1px solid #e6e9ed;
+        gap: 0.3rem;
+        background: linear-gradient(0deg, rgba(163, 210, 202, 0.98) 0%, rgba(163, 210, 202, 0.95) 100%);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-        padding: 11px 12px;
-        border-top: 1px solid #ececec;
-        background: #fff;
-        border-radius: 11px;
-        margin-top: 0;
-        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
-        gap: 8px;
+        margin-top: 0.5rem;
     }
 
     .discover-page .project-card .bottom-bar a,
     .discover-page .project-card .bottom-bar button {
-        font-size: 0.82rem;
-        padding: 7px 14px;
+        font-size: 0.88rem;
+        padding: 0.5em 0.9em;
+        flex: 1 1 25%;
         text-align: center;
-        color: #5a5a85;
-        font-weight: 600;
-        background: #f7f7fa;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        white-space: nowrap;
+        min-width: 84px;
     }
 
     .discover-page .project-card .details {
@@ -3772,9 +3472,9 @@ main.conversations-page {
         font-size: 0.93rem;
     }
     .discover-page .project-card .buttons button {
-        width: 70px;
-        height: 70px;
-        font-size: 0.8rem;
+        width: 52px;
+        height: 52px;
+        font-size: 1.12rem;
     }
 }
 
@@ -3867,13 +3567,13 @@ body.page-error a.button:hover {
     }
 
     .discover-page .project-card .buttons {
-        gap: 25px;
+        gap: 0.85em;
     }
 
     .discover-page .project-card .buttons button {
-        width: 70px;
-        height: 70px;
-        font-size: 0.8rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
     }
 
     body.login-page main {
@@ -3909,449 +3609,5 @@ body.page-error a.button:hover {
 
     .discover-page .project-card .actions {
         padding: 0.9rem 0.7rem 0.6rem;
-    }
-}
-
-/* ======= LISTA DE CHATS (RESPONSIVE MÓVIL) ======= */
-/* Ocultar "Converses" en la navegación de messages.php */
-body.conversations-page .sidebar .nav-links li:nth-child(3) a {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    body.conversations-page {
-        overflow-x: hidden;
-    }
-
-    body.conversations-page .sidebar {
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 0.8em 1em;
-        gap: 0.6em;
-        flex-direction: column;
-        background: linear-gradient(180deg, rgba(163, 210, 202, 0.98) 0%, rgba(163, 210, 202, 0.85) 100%);
-        backdrop-filter: blur(10px);
-    }
-
-    body.conversations-page .sidebar .nav-links {
-        gap: 0.6em;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    body.conversations-page .sidebar .nav-links li a {
-        font-size: 0.9rem;
-        padding: 0.6em 1em;
-        white-space: normal;
-    }
-
-    body.conversations-page .sidebar .session-info {
-        justify-content: center;
-        gap: 0.6em;
-        flex-wrap: wrap;
-        font-size: 0.85rem;
-    }
-
-    body.conversations-page main.conversations-page {
-        min-height: 100svh;
-        padding: 10px;
-    }
-
-    body.conversations-page .conversations-container {
-        max-width: 100%;
-        width: 100%;
-        padding: 18px 14px;
-        border-radius: 18px;
-        max-height: none;
-        margin-top: 10px;
-    }
-
-    body.conversations-page .conversations-header {
-        padding: 18px 14px 14px;
-        align-items: center;
-        border-radius: 14px 14px 0 0;
-    }
-
-    body.conversations-page .conversations-header h1 {
-        font-size: 22px;
-        line-height: 1.1;
-    }
-
-    body.conversations-page .conversations-header .btn-back {
-        padding: 10px 14px;
-        border-radius: 20px;
-    }
-
-    body.conversations-page .conversation-item {
-        gap: 14px;
-        padding: 12px 14px;
-    }
-
-    body.conversations-page .conversation-avatar {
-        width: 46px;
-        height: 46px;
-    }
-
-    body.conversations-page .avatar-placeholder {
-        width: 46px;
-        height: 46px;
-        font-size: 18px;
-    }
-
-    body.conversations-page .conversation-header h3 {
-        font-size: 18px;
-    }
-
-    body.conversations-page .conversation-time {
-        font-size: 13px;
-        margin-left: 8px;
-    }
-
-    body.conversations-page .conversation-entity {
-        font-size: 13px;
-        color: var(--texto-claro);
-        opacity: 0.85;
-        margin: 0;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    body.conversations-page .conversation-preview {
-        font-size: 14px;
-        white-space: normal;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        -webkit-box-orient: vertical;
-    }
-
-    body.conversations-page .conversation-arrow {
-        display: none;
-    }
-}
-
-/* ========== PAGE CHAT (MOBILE FIRST) ========== */
-body.page-chat {
-    background: linear-gradient(135deg, var(--azul-cielo) 0%, var(--verde-menta) 100%);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.chat-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    background: white;
-}
-
-/* Chat Header */
-.chat-header {
-    background: linear-gradient(135deg, var(--azul-lila) 0%, var(--azul-cielo) 100%);
-    color: white;
-    padding: 16px 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
-    gap: 12px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.chat-header-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex: 1;
-    min-width: 0;
-}
-
-.chat-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 2px solid white;
-    overflow: hidden;
-    flex-shrink: 0;
-    background: var(--gris-claro);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chat-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.avatar-placeholder {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--azul-lila);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.chat-header-text {
-    flex: 1;
-    min-width: 0;
-}
-
-.chat-header-text h2 {
-    font-size: 1.1rem;
-    margin: 0;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.chat-header-text .chat-entity {
-    font-size: 0.8rem;
-    opacity: 0.9;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.btn-back {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.btn-back:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-/* Messages Container */
-.messages-container {
-    flex: 1;
-    overflow-y: auto;
-    padding: 16px 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    background: white;
-}
-
-.messages-container::-webkit-scrollbar {
-    width: 6px;
-}
-
-.messages-container::-webkit-scrollbar-track {
-    background: #f0f0f0;
-}
-
-.messages-container::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 3px;
-}
-
-.messages-container::-webkit-scrollbar-thumb:hover {
-    background: #999;
-}
-
-/* Message Bubble */
-.message-bubble {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 4px;
-}
-
-.message-bubble.sent {
-    justify-content: flex-end;
-}
-
-.message-bubble.received {
-    justify-content: flex-start;
-}
-
-.message-content {
-    max-width: 85%;
-    padding: 10px 14px;
-    border-radius: 14px;
-    font-size: 1.05rem;
-    line-height: 1.5;
-    word-wrap: break-word;
-}
-
-.message-bubble.sent .message-content {
-    background: linear-gradient(135deg, var(--azul-lila), var(--azul-lila-hover));
-    color: white;
-    font-weight: 500;
-}
-
-.message-bubble.received .message-content {
-    background: #f0f0f0;
-    color: var(--texto-oscuro);
-}
-
-.message-time {
-    font-size: 0.65rem;
-    color: #888;
-    align-self: flex-end;
-    margin: 0 4px;
-}
-
-/* Chat Input Area */
-.chat-input-area {
-    background: white;
-    padding: 12px 14px;
-    border-top: 1px solid #ddd;
-    flex-shrink: 0;
-    position: sticky;
-    bottom: 0;
-    z-index: 100;
-}
-
-.message-form {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.message-input {
-    flex: 1;
-    border: 1.5px solid #ddd;
-    border-radius: 10px;
-    padding: 12px 14px;
-    font-size: 0.95rem;
-    background: var(--fondo-blanco);
-    color: var(--texto-oscuro);
-    font-family: 'Josefin Sans', sans-serif;
-    min-height: 44px;
-}
-
-.message-input:focus {
-    outline: none;
-    border-color: var(--azul-lila);
-    box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.1);
-}
-
-.btn-send {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--azul-lila), var(--azul-lila-hover));
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    flex-shrink: 0;
-}
-
-.btn-send:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(123, 104, 238, 0.3);
-}
-
-.btn-send:active {
-    transform: scale(0.95);
-}
-
-.btn-send svg {
-    width: 22px;
-    height: 22px;
-}
-
-/* ========== TABLET RESPONSIVE (min-width: 600px) ========== */
-@media (min-width: 600px) {
-    body.page-chat {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background: linear-gradient(135deg, var(--azul-cielo) 0%, var(--verde-menta) 100%);
-    }
-
-    .chat-container {
-        max-width: 700px;
-        width: 100%;
-        height: calc(100vh - 40px);
-        border-radius: 18px;
-        background: white;
-        box-shadow: 0 12px 40px rgba(163, 210, 202, 0.2);
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .chat-header {
-        padding: 16px 18px;
-        border-radius: 18px 18px 0 0;
-        position: relative;
-    }
-
-    .chat-header-text h2 {
-        font-size: 1.1rem;
-    }
-
-    .chat-header-text .chat-entity {
-        font-size: 0.8rem;
-    }
-
-    .chat-avatar {
-        width: 50px;
-        height: 50px;
-    }
-
-    .messages-container {
-        padding: 16px 14px;
-        gap: 12px;
-    }
-
-    .message-content {
-        max-width: 70%;
-        padding: 10px 14px;
-        font-size: 0.95rem;
-        border-radius: 14px;
-    }
-
-    .message-input {
-        padding: 11px 14px;
-        font-size: 0.95rem;
-    }
-
-    .chat-input-area {
-        border-radius: 0 0 18px 18px;
-        position: relative;
-    }
-
-    .btn-send {
-        width: 44px;
-        height: 44px;
-    }
-
-    .btn-send svg {
-        width: 22px;
-        height: 22px;
     }
 }

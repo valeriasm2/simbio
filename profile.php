@@ -5,7 +5,7 @@ require_once 'includes/logger.php';
 
 // Si no està connectat, redirigeix a login.php
 if (!isLogged()) {
-    log_warning("Acceso denegado a discover.php - Usuario no autenticado");
+    log_warning("Acceso denegado a profile.php - Usuario no autenticado");
     header('Location: login.php');
     exit;
 }
@@ -28,6 +28,7 @@ $tags = getUserTagsByEmail($email);
 
 // Manejar el guardado del formulario
 // Manejar el guardado del formulario
+
 $save_message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -75,6 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </nav>
             <h1>Perfil <?php echo htmlspecialchars($profile['name']); ?></h1>
             <div class="session-info">
+                <a href="https://youtu.be/zSXbPNl1RJw" target="_blank">Video</a>
+                |
                 <?php if (isLogged()): ?>
                 <span><?= htmlspecialchars($_SESSION['user']['name']) ?></span>
                     <a href="logout.php">Tancar sessió</a>
